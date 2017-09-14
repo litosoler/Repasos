@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modificar Div</title>
+	<!-- link al archivo de jquery -->
+	<script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+	<div>
+		<div id="texto">
+			Este es un texto.
+		</div>
+		<button id="modificar">Modificar</button>
+	</div>
+
+	<script type="text/javascript">
+		var i=2;
+
+		$("#modificar").click(function(){
+			$("#texto").html("este es el texto modicado version " + i);
+			i++;
+		});
+	</script>
+</body>
+</html>
